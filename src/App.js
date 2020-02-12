@@ -6,21 +6,20 @@ import Welcome from './components/Welcome'
 import About from './components/About'
 import Projects from './components/Projects';
 import More from './components/More'
-import Footer from './components/Footer'
+import Contact from './components/Contact';
+
 
 import './App.scss';
 
-function App() {
+function App(props) {
   return (
     <div className="App">
-      <header className="App-header">
         <Navbar />
         <Welcome />
         <About />
         <Projects />
         {/* <More /> */}
-        <Footer />
-      </header>
+        <Contact />
     </div>
   );
 }

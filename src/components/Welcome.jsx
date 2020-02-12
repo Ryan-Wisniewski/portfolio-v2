@@ -4,8 +4,8 @@ const Welcome = () => {
 
 
     return (
-        <div className='background'>
-            <h1 className='onScroll'>Welcome to the Madhouse</h1>
+        <div id='home' className='welcome'>
+            <a href='#about'><h1 className='onScroll'>Welcome to the Madhouse</h1></a>
         </div>
     )
 }
