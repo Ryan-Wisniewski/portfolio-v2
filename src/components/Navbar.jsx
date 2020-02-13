@@ -5,23 +5,30 @@ import limg from '../assets/linkedinLogo.png'
 
 const Navbar = () => {
 
+    window.onscroll = function(){scroll()}
 
-    
+    function scroll() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+          document.getElementById("nav").className = "nav filled";
+        } else {
+          document.getElementById("nav").className = "nav";
+        }
+      }
 
     return (
-    <header className='nav'>
+    <header id='nav' className='nav'>
         <div className='dropdown'>
             <nav className='navbar dropdown-items'>
-                <a className="dropdown-links left" href='#home'>Home</a>
-                <a className="dropdown-links" href='#about'>About</a>
-                <a className="dropdown-links" href='#projects'>Projects</a>
+                <a className="dropdown-links left borderRight" href='#home'>Home</a>
+                <a className="dropdown-links borderRight" href='#about'>About</a>
+                <a className="dropdown-links borderRight" href='#projects'>Projects</a>
                 <a className="dropdown-links" href='#contact'>Contact</a>
                 {/* <a className="dropdown-links" href='#more'>More</a> */}
             </nav>
         </div>
         <div className='socials'>
-            <a href='https://github.com/Ryan-Wisniewski' ><img src={gimg} alt='Github logo'/></a>
-            <a className='right' href='http://www.linkedin.com/in/ryan-wisniewski' ><img src={limg} alt='LinkedIn logo'/></a>
+            <a href='https://github.com/Ryan-Wisniewski' target="_blank"><img src={gimg} alt='Github logo'/></a>
+            <a className='right' href='http://www.linkedin.com/in/ryan-wisniewski' target="_blank"><img src={limg} alt='LinkedIn logo'/></a>
         </div>
     </header>
     )
