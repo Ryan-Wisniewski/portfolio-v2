@@ -36,7 +36,7 @@ const Projects = () => {
                                 to manage the state of an application.</p>
                             <a className='link' href='https://github.com/Ryan-Wisniewski/nasa-photo-of-the-day' target="_blank">GitHub repository here</a>
                         </div>
-                        <a href='https://nasa-photooftheday.herokuapp.com/' target="_blank">
+                        <a className='imgAll' href='https://nasa-photooftheday.herokuapp.com/' target="_blank">
                             <p className='webLink'>Check out the website</p>
                            <img src={npodImg} alt='project 2 img here' className='img' />
                         </a> 
@@ -64,7 +64,7 @@ const Projects = () => {
                             </p>
                             <a className='link' href='https://github.com/Split-The-Bill-Build-Week/Back-End' target="_blank">GitHub repository here</a>
                         </div>
-                        <a href='https://split-the-bill-be.herokuapp.com/' target="_blank">
+                        <a className='imgAll' href='https://split-the-bill-be.herokuapp.com/' target="_blank">
 
                             <p className='webLink'>Check out the website</p>
                             <img src={stb2Img} alt='project 4 img here' className='img' />
