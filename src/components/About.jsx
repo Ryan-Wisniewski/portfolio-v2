@@ -8,7 +8,7 @@ const About = () => {
             <span id='about' name='about'> &nbsp; </span>
             <h2>About what I do.</h2>
             <p>
-            Using HTML/CSS, and Javascript, I am able to create seamless user-interface that should feel intuitive 
+            Using HTML/CSS and Javascript, I am able to create seamless user-interface that should feel intuitive 
             and user-friendly. In my spare time I am currently: {workingOn}
             For state driven projects, I am familiar with react. The way state flows through the entire application 
             is very intriguing. For bigger apps, in order to pass data more easily, I am familiar with redux and useContext. 
