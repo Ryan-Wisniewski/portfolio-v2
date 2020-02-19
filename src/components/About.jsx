@@ -1,20 +1,20 @@
 import React from 'react'
 
 const About = () => {
-    let workingOn = 'working on on getting my first software job.'
+    let workingOn = 'learning to penetrate my own network from within my single computer.'
     return (
         <section className='max'>
         <div className='about bg'>
             <span id='about' name='about'> &nbsp; </span>
             <h2>About what I do.</h2>
             <p>
-            Using html, css, and javascript, I am able to create seamless user-interface that hopefully feels intuitive 
+            Using HTML/CSS, and Javascript, I am able to create seamless user-interface that should feel intuitive 
             and user-friendly. In my spare time I am currently: {workingOn}
             For state driven projects, I am familiar with react. The way state flows through the entire application 
-            is very intriguing. For bigger apps to pass data much easier, I am familiar with redux, and a few other state 
-            management systems. Using SQL3 and Node.js I am able create and maintain a RESTful database management system.
-            I'm also learning Mongo for a project I am working on currently! Big shout out to Lambda school and everyone else who has
-            helped me along the way! Im excited to see where my coding journey will take me!</p>
+            is very intriguing. For bigger apps, in order to pass data more easily, I am familiar with redux and useContext. 
+            Using SQL3 and Node.js I am able create and maintain a RESTful database management system.
+            On the side I'm an aspiring ethical hacker. I travel wherever the data takes me.
+            I'm curious to see where my learning journey takes me!</p>
         </div>
         <div className='projectIntro'>
             <h2>Projects</h2>
