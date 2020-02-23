@@ -1,11 +1,9 @@
 import React, {useState} from 'react'
 import emailjs from 'emailjs-com'
-import ContactModal1 from './ContactModal1'
-import ContactModal2 from './ContactModal2'
+import ContactModal from './ContactModal'
 
 const Contact = (props) => {
     const [isLoading, setIsLoading] = useState(false)
-    const [isModal, setIsModal] = useState(false)
     const [contact, setContact] = useState({
         name:'',
         email:'',
@@ -48,8 +46,7 @@ const Contact = (props) => {
     }
     return (
         <>
-            {isModal === true ? <ContactModal1 />: null}
-            {isLoading === true ? <ContactModal2 /> : 
+            {isLoading === true ? <ContactModal /> : 
             <div className='contact'>
                 <form onSubmit={onSubmit}>
                 <span id='contact' name='contact'> &nbsp; </span>

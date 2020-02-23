@@ -3,7 +3,7 @@ import { css } from "@emotion/core";
 import ClipLoader from "react-spinners/PacmanLoader";
 // faseloader, moonloader
 
-const ContactModal2 = () => {
+const ContactModal = () => {
     const override = css`
         display: block;
         margin: 8rem auto;
@@ -21,4 +21,4 @@ const ContactModal2 = () => {
     )
 }
 
-export default ContactModal2
+export default ContactModal
