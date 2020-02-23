@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
-import {Redirect} from 'react-router-dom'
 import emailjs from 'emailjs-com'
-import ContactModal from './ContactModal'
+import ContactModal1 from './ContactModal1'
+import ContactModal2 from './ContactModal2'
 
 const Contact = (props) => {
     const [isLoading, setIsLoading] = useState(false)
@@ -38,10 +38,8 @@ const Contact = (props) => {
         emailjs.send(service_id, template_id, template_params, 'user_ODTJPw3P4BqTgPwrOMWZj')
             .then((res) => {
                 console.log('re',res)
-                setIsLoading(false)
-                setIsModal(true)
-                sleep(3000).then(() => {
-                    setIsModal(false)
+                sleep(1000).then(() => {
+                    setIsLoading(false)
                     window.location.reload(true);
                 })
             }, (error) => {
@@ -50,50 +48,52 @@ const Contact = (props) => {
     }
     return (
         <>
-        {isModal == true ? <ContactModal />: null}
-        <div className='contact'>
-            <form onSubmit={onSubmit}>
-            <span id='contact' name='contact'> &nbsp; </span>
-                <legend>Ask me anything!</legend>
-                <input
-                    type='email'
-                    name='email'
-                    placeholder='Your email here'
-                    value={contact.email}
-                    onChange={onChange}
-                    />
-                <input
-                    type='text'
-                    name='name'
-                    placeholder='Your name here'
-                    value={contact.name}
-                    onChange={onChange}
-                    required
-                    />
-                <textarea
-                    className='description'
-                    type='text'
-                    name='description'
-                    placeholder='Your question or suggestion here'
-                    value={contact.description}
-                    onChange={onChange}
-                    required
-                    />
-                <button type='submit' value="Send">Submit</button>
-            </form>
-            <footer className='footer'>
+            {isModal === true ? <ContactModal1 />: null}
+            {isLoading === true ? <ContactModal2 /> : 
+            <div className='contact'>
+                <form onSubmit={onSubmit}>
+                <span id='contact' name='contact'> &nbsp; </span>
+                    <legend>Ask me anything!</legend>
+                    <input
+                        type='email'
+                        name='email'
+                        placeholder='Your email here'
+                        value={contact.email}
+                        onChange={onChange}
+                        />
+                    <input
+                        type='text'
+                        name='name'
+                        placeholder='Your name here'
+                        value={contact.name}
+                        onChange={onChange}
+                        required
+                        />
+                    <textarea
+                        className='description'
+                        type='text'
+                        name='description'
+                        placeholder='Your question or suggestion here'
+                        value={contact.description}
+                        onChange={onChange}
+                        required
+                        />
+                    <button type='submit' value="Send">Submit</button>
+                </form>
+                <footer className='footer'>
 
-                <div>
-                <span id='footer' name='footer'> &nbsp; </span>
-                    <h2>Or Contact Directly:</h2>
-                    <ul>
-                        <li>RyanWisniewski39@gmail.com</li>
-                        <li>Woodstock, GA</li>
-                    </ul>
-                </div>           
-            </footer>
-        </div>
-    </>
+                    <div>
+                        <span id='footer' name='footer'> &nbsp; </span>
+                        <h2>Or Contact Directly:</h2>
+                        <ul>
+                            <li>RyanWisniewski39@gmail.com</li>
+                            <li>Woodstock, GA</li>
+                        </ul>
+                    </div>           
+                </footer>
+            </div>
+            }
+        </>
     )
 }
 

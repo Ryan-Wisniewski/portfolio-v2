@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ContactModal = () => {
+const ContactModal1 = () => {
     return (
         <div className='backdrop'>
             <div className='modal'>
@@ -10,4 +10,4 @@ const ContactModal = () => {
     )
 }
 
-export default ContactModal
+export default ContactModal1

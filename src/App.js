@@ -1,11 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 
 import Navbar from './components/Navbar'
 import Welcome from './components/Welcome'
 import About from './components/About'
 import Projects from './components/Projects';
-import More from './components/More'
+// import More from './components/More'
 import Contact from './components/Contact';
 
 

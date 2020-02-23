@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 import gimg from '../assets/githubLogo.png'
 import limg from '../assets/linkedinLogo.png'
 
@@ -27,8 +26,8 @@ const Navbar = () => {
             </nav>
         </div>
         <div className='socials'>
-            <a href='https://github.com/Ryan-Wisniewski' target="_blank"><img src={gimg} alt='Github logo'/></a>
-            <a className='right' href='http://www.linkedin.com/in/ryan-wisniewski' target="_blank"><img src={limg} alt='LinkedIn logo'/></a>
+            <a href='https://github.com/Ryan-Wisniewski' target="_blank" rel="noopener noreferrer"><img src={gimg} alt='Github logo'/></a>
+            <a className='right' href='http://www.linkedin.com/in/ryan-wisniewski' target="_blank" rel="noopener noreferrer"><img src={limg} alt='LinkedIn logo'/></a>
         </div>
     </header>
     )

@@ -1,7 +1,7 @@
 import React from 'react'
 
 const About = () => {
-    let workingOn = 'learning to penetrate my own network from within my single computer.'
+    let workingOn = 'learning to penetrate my own network from within my single computer. '
     return (
         <section className='max'>
         <div className='about bg'>
@@ -9,7 +9,7 @@ const About = () => {
             <h2>About what I do.</h2>
             <p>
             Using HTML/CSS and Javascript, I am able to create seamless user-interface that should feel intuitive 
-            and user-friendly. In my spare time I am currently: {workingOn}
+            and user-friendly. In my spare time I am currently {workingOn}
             For state driven projects, I am familiar with react. The way state flows through the entire application 
             is very intriguing. For bigger apps, in order to pass data more easily, I am familiar with redux and useContext. 
             Using SQL3 and Node.js I am able create and maintain a RESTful database management system.
