@@ -69,7 +69,7 @@ const Projects = () => {
                 
                     <div className='project2'>  
                         <div className='textAll'>
-                            <h3>Computer Science Build Week 2</h3>
+                            <h3>Blockchain Coin Mining</h3>
                             <p className='text'>
                                 Applied the skills and knowledge from the graphs, blockchain, and computer 
                                 architecture. 
