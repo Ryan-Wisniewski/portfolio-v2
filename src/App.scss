@@ -173,18 +173,21 @@ img{
   background-color: rgb(200, 200, 200);
 }
 
+.coverImage{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  z-index: 1;
+}
 .welcome{
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  background-image: url(./assets/inovation-city.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right bottom;
-  background-attachment: fixed;
   height: 100vh;
-
 
   h1{
     color: #fff;
