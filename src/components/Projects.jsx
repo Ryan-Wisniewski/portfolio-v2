@@ -15,7 +15,7 @@ const Projects = () => {
                     <div className='textAll'>
                         <h3>Bead It!</h3>
                         <p className='text'>
-                            This website is designed for University Students attending art class. 
+                            This website is designed for University Students attending Art class or anyone who likes the Art of beading. 
                             Want to see your design before committing to pulling out any beads? 
                             The app handles a bunch of users' input as one crafts any unique beading design. 
                             With the power of imagination this app fits your beading needs. 
@@ -34,7 +34,7 @@ const Projects = () => {
                     <div className='textAll'>
                         <h3>Snake Online</h3>
                         <p className='text'>
-                            Using socket.IO to create a WebSock secure connection, up to 4 players can play a tron like game. 
+                            Using socket.IO to create a WebSocket secure connection, up to 4 players can play a tron like game. 
                             This project was launched as a tribute to BMtron, an old flash player game for the browser. 
                             Don't have 3 people to play? The game will add bots to play with. 
                             The objective is to avoid other snakes path and the wall or you loose. Can you survive long enough to win?
@@ -71,7 +71,7 @@ const Projects = () => {
                     <div className='textAll'>
                         <h3>Blockchain Coin Mining</h3>
                         <p className='text'>
-                            A small team of four, applied the skills and knowledge from the Computer Science unit with graphs, blockchain, and computer architecture. 
+                            A small team of four, applied the skills and knowledge from the Computer Science unit with graphs, blockchain, algorithms, and computer architecture. 
                             The team was one of two which programmed an algorithm to automate mining blockchain blocks with python3. 
                             Mined 623 of the 1220 total coins out of 10 teams competing. 
                         </p>
