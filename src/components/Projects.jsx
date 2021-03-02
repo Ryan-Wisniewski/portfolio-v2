@@ -1,90 +1,126 @@
 import React from 'react'
 import stbImg from '../assets/split-the-bill.PNG'
-import npodImg from '../assets/firefly.PNG'
-import rdxImg from '../assets/ReduxDogs.PNG'
-import stb2Img from '../assets/CSBW2.PNG'
+import ffsImg from '../assets/firefly.PNG'
+import bcmImg from '../assets/CSBW2.PNG'
+import pokImg from '../assets/Pokedex.PNG'
+import sosImg from '../assets/snake.PNG'
+import biImg from '../assets/ArtSmartsPodcast.PNG'
 
 const Projects = () => {
-
-
-
     return (
         <section>
-            <span id='projects' name='projects'> &nbsp; </span>       
+            <span id='projects' name='projects'> &nbsp; </span>
             <div className='projects'>
-                    <div className='project1'>
-                        <div className='textAll'>
-                            <h3>Split the Bill</h3>
-                            {/* During the first day we were introduced to GitHub, in the first month we learned html and css quickly and efficiently.
-                            We dove right into the my current favorite language, javascript. With javascript we learned DOM 
-                            manipulation.  */}
-                            <p className='text'>
-                                App designed to take bills of any tab between people remembering who owes how much
-                                Operated with team on new technologies to discover in depth in the future
-                                Built the styling with the Front-end dev to cement basic functionality 
-                                of an up unit by receiving a first pass crash course of React
-                            </p>
-                            <p>Utilized: HTML/CSS, JS, React</p>
-                            <a  className='link' href='https://github.com/lambda-split-the-bill' target="_blank" rel="noopener noreferrer">GitHub repository here</a>
+                <div className='project2'>
+                    <div className='textAll'>
+                        <h3>Bead It!</h3>
+                        <p className='text'>
+                            This website is designed for University Students attending Art class or anyone who likes the Art of beading. 
+                            Want to see your design before committing to pulling out any beads? 
+                            The app handles a bunch of users' input as one crafts any unique beading design. 
+                            With the power of imagination this app fits your beading needs. 
+                        </p>
+                        <p className='text2'>Utilized: React, useContext</p>
+                        <a className='link' href='https://bead-it.netlify.app/' target="_blank" rel="noopener noreferrer">Check out the website</a>
+                    </div>
+                    <a className='imgAll' href='https://bead-it.netlify.app/' target="_blank" rel="noopener noreferrer">
+                        <div className='cursorDefault'>
+                            <p className='webLink' style={{visibility: 'hidden'}}>Sorry, Repo is Private</p>
                         </div>
-                        <a className='imgAll' href='https://split-the-bill.netlify.com/' target="_blank" rel="noopener noreferrer">
-                            <p className='webLink'>Check out the website</p>
-                            <img src={stbImg} alt='project 1 img here' className='img' />
-                        </a>
-                    </div>                              
-                    <div className='project2'>
-                        
-                        <div className='textAll'> 
-                            <h3>Redux with Puppies</h3>
-                            <p className='text'>By the third month I had become very comfortable with React by the end of the month we had learned Redux and useContext among 
-                                other methods to handle state for larger applications. Reducers and actions were my favorite thing to learn in the program! Redux was one
-                                of the biggest challenges, and the first time I had to envision how data passes through an application.
-                            </p>
-                            <p>Utilized: React, Redux</p>
-                            <a className='link' href='https://github.com/Ryan-Wisniewski/React-Redux-App' target="_blank" rel="noopener noreferrer">GitHub repository here</a>
-                        </div> 
-                        <a className='imgAll' href='https://redux-with-puppeis.netlify.com/' target="_blank" rel="noopener noreferrer">
-                            <p className='webLink'>Check out the website</p>
-                            <img src={rdxImg} alt='project 3 img here' className='img' />
-                        </a>
-                             
-                    </div>                              
-                    <div className='project1'>
-                        <div className='textAll'>
-                            <h3>Project Firefly</h3>
-                            <p className='text'>
-                                Game that teaches young children to think like an engineer
-                                Revised with stakeholder to ensure a product was released in a timely manner by holding weekly meetings to discuss progress
-                                Rebuilt the user flow to increase readability by separating the game server from the users
-                                Matched product to the vision of the stakeholder by implementing the design canvases
-                            </p>
-                            <p>Utilized: Mongo, Firebase, React, Node, Express</p>
-                            <a className='link' href='https://github.com/Lambda-School-Labs/project-firefly-site' target="_blank" rel="noopener noreferrer">GitHub repository here</a>
+                        <img src={biImg} alt='project 4 img here' className='img' />
+                    </a>
+                </div>
+                <div className='project1'>
+                    <div className='textAll'>
+                        <h3>Snake Online</h3>
+                        <p className='text'>
+                            Using socket.IO to create a WebSocket secure connection, up to 4 players can play a tron like game. 
+                            This project was launched as a tribute to BMtron, an old flash player game for the browser. 
+                            Don't have 3 people to play? The game will add bots to play with. 
+                            The objective is to avoid other snakes path and the wall or you loose. Can you survive long enough to win?
+                        </p>
+                        <p className='text2'>Utilized: React, Node.js, sockets</p>
+                        <a className='link' href='https://snake-online.netlify.app' target="_blank" rel="noopener noreferrer">Check out the website</a>
+                    </div>
+                    <a className='imgAll' href='https://github.com/Ryan-Wisniewski/tronOnline' target="_blank" rel="noopener noreferrer">
+                        <div className='cursorDefault'>
+                            <p className='webLink'>GitHub repository here</p>
                         </div>
-                        <a className='imgAll' href='https://projectfirefly.netlify.com/' target="_blank" rel="noopener noreferrer">
+                        <img src={sosImg} alt='project 4 img here' className='img' />
+                    </a>
+                </div>
+                <div className='project2'>
+                    <div className='textAll'>
+                        <h3>Pokédex</h3>
+                        <p className='text'>
+                            Created a Pokédex during a one week sprint for ash on his travels through the world of Pokémon.
+                            Using the Pokémon api Ash or anyone can easily view Pokémon as well as all the information one would need to know about each Pokémon.
+                            The Pokédex also comes with a search functionality to easily find a Pokémon by name or number.
+                        </p>
+                        <p className='text2'>Utilized: React, Node.js, sockets</p>
+                        <a className='link' href='https://github.com/Ryan-Wisniewski/PokedexUI' target="_blank" rel="noopener noreferrer">GitHub repository here</a>
+                    </div>
+                    <a className='imgAll' href='https://kanto-region-pokedex.netlify.app' target="_blank" rel="noopener noreferrer">
+                        <div className='cursorDefault'>
                             <p className='webLink'>Check out the website</p>
-                            <img src={npodImg} alt='project 2 img here' className='img' />
-                        </a>
-                    </div>                
-                
-                    <div className='project2'>  
-                        <div className='textAll'>
-                            <h3>Blockchain Coin Mining</h3>
-                            <p className='text'>
-                                Applied the skills and knowledge from the graphs, blockchain, and computer 
-                                architecture. 
-                                Programmed an algorithm to automate mining  blockchain blocks with python3. 
-                                Mined ⅓ of the 4000 total coins out of 10 teams. 
-                            </p>
-                            <p>Utilized: Python3</p>
-                            <a className='link' href='https://github.com/Team-Nowhere/CS-Build-Week-2' target="_blank" rel="noopener noreferrer">GitHub repository here</a>
                         </div>
-                        <a className='imgAll' href='https://github.com/Team-Nowhere/CS-Build-Week-2' target="_blank" rel="noopener noreferrer">
-
-                            <p className='webLink'>Check out the Github</p>
-                            <img src={stb2Img} alt='project 4 img here' className='img' />
-                        </a>
-                    </div>               
+                        <img src={pokImg} alt='project 4 img here' className='img' />
+                    </a>
+                </div>
+                <div className='project1'>  
+                    <div className='textAll'>
+                        <h3>Blockchain Coin Mining</h3>
+                        <p className='text'>
+                            A small team of four, applied the skills and knowledge from the Computer Science unit with graphs, blockchain, algorithms, and computer architecture. 
+                            The team was one of two which programmed an algorithm to automate mining blockchain blocks with python3. 
+                            Mined 623 of the 1220 total coins out of 10 teams competing. 
+                        </p>
+                        <p className='text2'>Utilized: Python3</p>
+                        <a className='link' href='https://github.com/Team-Nowhere/CS-Build-Week-2' target="_blank" rel="noopener noreferrer">GitHub repository here</a>
+                    </div>
+                    <a className='imgAll' href='https://github.com/Team-Nowhere/CS-Build-Week-2' target="_blank" rel="noopener noreferrer">
+                        <p className='webLink'>Check out the Github</p>
+                        <img src={bcmImg} alt='project 4 img here' className='img' />
+                    </a>
+                </div>
+                <div className='project2'>
+                    <div className='textAll'>
+                        <h3>Project Firefly</h3>
+                        <p className='text'>
+                            Project Firefly is a game that teaches young children how to think like an engineer. 
+                            Our team of 7, along with the website stakeholder, met weekly to discuss progress to ensure the product was released in a timely manner. 
+                            We built the user flow to increase readability and functionality by separating the game data from the users. 
+                            The team and I matched the product to the vision of the stakeholder by implementing the design canvases provided.
+                        </p>
+                        <p className='text2'>Utilized: Mongo, Firebase, React, Node, Express</p>
+                        <a className='link' href='https://github.com/Lambda-School-Labs/project-firefly-site' target="_blank" rel="noopener noreferrer">GitHub repository here</a>
+                    </div>
+                    <a className='imgAll' href='https://projectfirefly.netlify.com/' target="_blank" rel="noopener noreferrer">
+                        <p className='webLink'>Check out the website</p>
+                        <img src={ffsImg} alt='project 2 img here' className='img' />
+                    </a>
+                </div>                
+                <div className='project1'>
+                    <div className='textAll'>
+                        <h3>Split the Bill</h3>
+                        {/* During the first day we were introduced to GitHub, in the first month we learned html and css quickly and efficiently.
+                        We dove right into the my current favorite language, javascript. With javascript we learned DOM 
+                        manipulation.  */}
+                        <p className='text'>
+                            App designed to split the bill between people sharing a tab. 
+                            Never again will anyone have to remember how much they owed previously. 
+                            Operated with a full-stack team on new technologies to later discover in depth. 
+                            Built the styling with the Front-end developer to start learning basics 
+                            of an upcoming unit by receiving a crash course of React.
+                        </p>
+                        <p className='text2'>Utilized: HTML/CSS, JS, React</p>
+                        <a  className='link' href='https://github.com/lambda-split-the-bill' target="_blank" rel="noopener noreferrer">GitHub repository here</a>
+                    </div>
+                    <a className='imgAll' href='https://split-the-bill.netlify.com/' target="_blank" rel="noopener noreferrer">
+                        <p className='webLink'>Check out the website</p>
+                        <img src={stbImg} alt='project 1 img here' className='img' />
+                    </a>
+                </div>
             </div>
         </section>
     )
