@@ -53,7 +53,7 @@ const Projects = () => {
                     <div className='textAll'>
                         <h3>Pokédex</h3>
                         <p className='text'>
-                            Created a Pokédex during a one week sprint for ash on his travels through the world of Pokémon.
+                            Created a Pokédex during a one week sprint for Ash on his travels through the world of Pokémon.
                             Using the Pokémon api Ash or anyone can easily view Pokémon as well as all the information one would need to know about each Pokémon.
                             The Pokédex also comes with a search functionality to easily find a Pokémon by name or number.
                         </p>
