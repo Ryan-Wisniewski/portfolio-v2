@@ -21,9 +21,9 @@ const Projects = () => {
                             With the power of imagination this app fits your beading needs. 
                         </p>
                         <p className='text2'>Utilized: React, useContext</p>
-                        <a className='link' href='https://bead-it.netlify.app/' target="_blank" rel="noopener noreferrer">Check out the website</a>
+                        <a className='link' href='https://bead-itv2.netlify.app/' target="_blank" rel="noopener noreferrer">Check out the website</a>
                     </div>
-                    <a className='imgAll' href='https://bead-it.netlify.app/' target="_blank" rel="noopener noreferrer">
+                    <a className='imgAll' href='https://bead-itv2.netlify.app/' target="_blank" rel="noopener noreferrer">
                         <div className='cursorDefault'>
                             <p className='webLink' style={{visibility: 'hidden'}}>Sorry, Repo is Private</p>
                         </div>
