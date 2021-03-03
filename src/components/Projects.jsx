@@ -3,8 +3,8 @@ import stbImg from '../assets/split-the-bill.PNG'
 import ffsImg from '../assets/firefly.PNG'
 import bcmImg from '../assets/CSBW2.PNG'
 import pokImg from '../assets/Pokedex.PNG'
-import sosImg from '../assets/snake.PNG'
-import biImg from '../assets/ArtSmartsPodcast.PNG'
+import sosImg from '../assets/bmtron.PNG'
+import biImg from '../assets/Beaditv2.PNG'
 
 const Projects = () => {
     return (
