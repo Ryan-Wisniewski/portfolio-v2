@@ -42,6 +42,7 @@ const Contact = (props) => {
                 })
             }, (error) => {
                 console.log(error)
+                setIsLoading(false)
             });
     }
     return (

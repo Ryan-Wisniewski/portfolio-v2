@@ -4,7 +4,7 @@ const Welcome = () => {
 
     return (
         <div id='home' className='welcome'>
-            <a href='#about'><h1 className='onScroll'>Welcome to the Madhouse</h1></a>
+            <a href='#about'><h1>Welcome to the Jungle</h1></a>
         </div>
     )
 }

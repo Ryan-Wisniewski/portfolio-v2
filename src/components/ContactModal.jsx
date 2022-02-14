@@ -1,5 +1,5 @@
 import React from 'react'
-import { css } from "@emotion/core";
+import { css } from "@emotion/react";
 import ClipLoader from "react-spinners/PacmanLoader";
 // faseloader, moonloader
 
@@ -13,7 +13,7 @@ const ContactModal = () => {
         <ClipLoader
             css={override}
             size={150}
-            //size={"150px"} this also works
+            size={"150px"}
             color={"yellow"}
             loading={true}
         />
