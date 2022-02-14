@@ -15,7 +15,7 @@ const Projects = () => {
                     <div className='textAll'>
                         <h3>Bead It!</h3>
                         <p className='text'>
-                            This website is designed for University Students attending Art class or anyone who likes the Art of beading. 
+                            Bead It! is designed for University Students attending Art class or anyone who likes the Art of beading. 
                             Want to see your design before committing to pulling out any beads? 
                             The app handles a bunch of users' input as one crafts any unique beading design. 
                             With the power of imagination this app fits your beading needs. 
@@ -27,7 +27,7 @@ const Projects = () => {
                         <div className='cursorDefault'>
                             <p className='webLink' style={{visibility: 'hidden'}}>Sorry, Repo is Private</p>
                         </div>
-                        <img src={biImg} alt='project 4 img here' className='img' />
+                        <img src={biImg} alt='project 4 img here' className='imgAnime' />
                     </a>
                 </div>
                 <div className='project1'>
@@ -36,7 +36,7 @@ const Projects = () => {
                         <p className='text'>
                             Using socket.IO to create a WebSocket secure connection, up to 4 players can play a tron like game. 
                             This project was launched as a tribute to BMtron, an old flash player game for the browser. 
-                            Don't have 3 people to play? The game will add bots to play with. 
+                            Don't have enough people to play? The game will add bots to play with. 
                             The objective is to avoid other snakes path and the wall or you loose. Can you survive long enough to win?
                         </p>
                         <p className='text2'>Utilized: React, Node.js, sockets</p>
@@ -46,7 +46,7 @@ const Projects = () => {
                         <div className='cursorDefault'>
                             <p className='webLink'>GitHub repository here</p>
                         </div>
-                        <img src={sosImg} alt='project 4 img here' className='img' />
+                        <img src={sosImg} alt='project 4 img here' className='imgAnime' />
                     </a>
                 </div>
                 <div className='project2'>
@@ -54,7 +54,7 @@ const Projects = () => {
                         <h3>Pokédex</h3>
                         <p className='text'>
                             Created a Pokédex during a one week sprint for Ash on his travels through the world of Pokémon.
-                            Using the Pokémon api Ash or anyone can easily view Pokémon as well as all the information one would need to know about each Pokémon.
+                            Using the Pokémon api Ash or any Pokémon Trainer can easily view Pokémon as well as all the information one would need to know about each Pokémon.
                             The Pokédex also comes with a search functionality to easily find a Pokémon by name or number.
                         </p>
                         <p className='text2'>Utilized: React, Node.js, sockets</p>
@@ -64,7 +64,7 @@ const Projects = () => {
                         <div className='cursorDefault'>
                             <p className='webLink'>Check out the website</p>
                         </div>
-                        <img src={pokImg} alt='project 4 img here' className='img' />
+                        <img src={pokImg} alt='project 4 img here' className='imgAnime' />
                     </a>
                 </div>
                 <div className='project1'>  
@@ -80,7 +80,7 @@ const Projects = () => {
                     </div>
                     <a className='imgAll' href='https://github.com/Team-Nowhere/CS-Build-Week-2' target="_blank" rel="noopener noreferrer">
                         <p className='webLink'>Check out the Github</p>
-                        <img src={bcmImg} alt='project 4 img here' className='img' />
+                        <img src={bcmImg} alt='project 4 img here' className='imgAnime' />
                     </a>
                 </div>
                 <div className='project2'>
@@ -97,7 +97,7 @@ const Projects = () => {
                     </div>
                     <a className='imgAll' href='https://projectfirefly.netlify.com/' target="_blank" rel="noopener noreferrer">
                         <p className='webLink'>Check out the website</p>
-                        <img src={ffsImg} alt='project 2 img here' className='img' />
+                        <img src={ffsImg} alt='project 2 img here' className='imgAnime' />
                     </a>
                 </div>                
                 <div className='project1'>
@@ -118,7 +118,7 @@ const Projects = () => {
                     </div>
                     <a className='imgAll' href='https://split-the-bill.netlify.com/' target="_blank" rel="noopener noreferrer">
                         <p className='webLink'>Check out the website</p>
-                        <img src={stbImg} alt='project 1 img here' className='img' />
+                        <img src={stbImg} alt='project 1 img here' className='imgAnime' />
                     </a>
                 </div>
             </div>
