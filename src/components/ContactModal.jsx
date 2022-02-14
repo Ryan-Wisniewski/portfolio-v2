@@ -13,7 +13,7 @@ const ContactModal = () => {
         <ClipLoader
             css={override}
             size={150}
-            size={"150px"}
+            // size={"150px"}
             color={"yellow"}
             loading={true}
         />
