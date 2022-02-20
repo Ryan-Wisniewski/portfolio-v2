@@ -23,6 +23,13 @@ ol, ul{
 
 //** GLOBALS **//
 
+@mixin flexBox($direction, $justify, $align){
+  display: flex;
+  flex-flow: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
 @mixin fillButton{
   transition: 1s;
   background-color: black;
@@ -92,9 +99,7 @@ img{
 
 .max{
   min-height: 100vh;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
+  @include flexBox(column nowrap, space-between, none);
 }
 
 .imgAnime{
@@ -126,9 +131,7 @@ img{
 }
 
 .nav{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+  @include flexBox(row, space-between, none);
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -138,10 +141,7 @@ img{
   transition: .8s ease-in-out;
 
   .navbar{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
-    align-items: center;
+    @include flexBox(row, flex-end, center);
     font-size: 3.5rem;
     font-weight: 500;
     height: 6rem;
@@ -155,10 +155,7 @@ img{
   }
 
   .socials{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
-    align-items: center;
+    @include flexBox(row, flex-end, center);
 
     img{
       padding: 0 1.5rem 0 1.5rem;
@@ -173,10 +170,7 @@ img{
 }
 
 .welcome{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
+  @include flexBox(row, center, center);
   background-image: url(./assets/inovation-city.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -201,10 +195,7 @@ img{
 }
 
 .about{
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: flex-start;
+  @include flexBox(column, center, flex-start);
   line-height: 2;
   padding: 6rem 7rem 3rem 7rem;
   text-align: justify;
@@ -215,10 +206,7 @@ img{
 }
 
 .projectIntro{
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: flex-start;
+  @include flexBox(column, center, flex-start);
   line-height: 2;
   padding: 3rem 7rem 6rem 7rem;
   text-align: justify;
@@ -229,30 +217,26 @@ img{
 }
 
 .projects{
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: flex-start;
+  @include flexBox(column, center, flex-start);
   color: black;
   text-align: justify;
 
   .project1{
-    display: flex;
-    flex-flow: row nowrap;
+    @include flexBox(row, none, none);
     background-color: lightgrey;
     padding: 4rem 5rem 4rem 5rem;
 
     .textAll{
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: space-between;
+      @include flexBox(column, space-between, none);
+      width: 50%;
 
       .text{
-        width: 55%;
+        width: 80%;
         margin: 1rem 0 1rem 0;
       }
 
       .text2{
+        width: 80%;
         margin: 1rem 0 2rem 0;
       }
 
@@ -271,48 +255,50 @@ img{
       }
     }
     .imgAll{
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: space-evenly;
-      align-items: flex-end;
-      
-      .webLink{
-        text-align: center;
-        font-size: 2rem;
-        font-weight: 500;
-        border: 2px solid black;
-        width: 25rem;
-        padding: 1rem 2rem;
+      @include flexBox(column, space-between, flex-end);
+      width: 50%;
+
+      .marginDiv{
         margin-bottom: 5rem;
+
+        .webLink{
+          text-align: center;
+          font-size: 2rem;
+          font-weight: 500;
+          border: 2px solid black;
+          width: 25rem;
+          padding: 1rem 2rem;
+        }
+      
+        .webLink:hover{
+          @include fillButton();
+          border: 2px solid rgb(94, 94, 94);
+          color: white;
+        }
       }
-    
-      .webLink:hover{
-        @include fillButton();
-        border: 2px solid rgb(94, 94, 94);
-        color: white;
+
+      .projImg{
+        width: 100%;
       }
     }
   }
 
   .project2{
-    display: flex;
-    flex-flow: row-reverse nowrap;
+    @include flexBox(row-reverse, none, none);
     background-color: darkgrey;
     padding: 4rem 5rem 4rem 5rem;
 
     .textAll{
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: space-between;
-      align-items: flex-end;
-      // text-align: right;
+      @include flexBox(column, space-between, flex-end);
+      width: 50%;
 
       .text{
-        width: 55%;
+        width: 80%;
         margin: 1rem 0 1rem 0;
       }
 
       .text2{
+        width: 80%;
         margin: 1rem 0 2rem 0;
       }
 
@@ -332,39 +318,41 @@ img{
     }
 
     .imgAll{
-      // background-color: red;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: space-evenly;
-      .webLink{
-        text-align: center;
-        font-size: 2rem;
-        font-weight: 500;
-        border: 2px solid black;
-        width: 25rem;
-        padding: 1rem 2rem;
+      @include flexBox(column, space-between, none);
+      width: 50%;
+
+      .marginDiv{
         margin-bottom: 5rem;
-      }
+
+        .webLink{
+          text-align: center;
+          font-size: 2rem;
+          font-weight: 500;
+          border: 2px solid black;
+          width: 25rem;
+          padding: 1rem 2rem;
+        }
     
-      .webLink:hover{
-        @include fillButton();
-        border: 2px solid rgb(94, 94, 94);
-        color: white;
+        .webLink:hover{
+          @include fillButton();
+          border: 2px solid rgb(94, 94, 94);
+          color: white;
+        }
+      }
+
+      .projImg{
+        width: 100%;
       }
     }
   }
 }
 
 .contact{
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: center;
+  @include flexBox(column, space-between, center);
   padding: 4rem 5rem 2rem 5rem;
 
   form{
-    display: flex;
-    flex-flow: column nowrap;
+    @include flexBox(column, none, none);
     width: 80%;
 
     legend{
@@ -427,13 +415,10 @@ img{
   }
 }
 
-// .more{}
-
 .footer{
-  display: flex;
-  flex-flow: column nowrap;
   text-align: center;
   margin: 4rem 0 0 0;
+
   li{
     font-size: 2rem;
     margin: 2.5rem 0 0 0;
@@ -455,9 +440,7 @@ img{
   }
 
   .nav{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+    @include flexBox(row, space-between, none);
 
     .navbar{
 
@@ -510,19 +493,12 @@ img{
 
   .projects{
     .project1{
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: space-between;
-      align-items: center;
+      @include flexBox(column, space-between, center);
       padding: 0;
 
       .textAll{
+        @include flexBox(column, center, center);
         text-align: center;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        margin-top: 1rem;
         
         .text{
           width: 100%;
@@ -535,10 +511,7 @@ img{
       }
       
       .imgAll{
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
+        @include flexBox(column, center, center);
         .webLink{
           margin-bottom: 1rem;
         }
@@ -550,18 +523,11 @@ img{
     }
 
     .project2{
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items: center;
+      @include flexBox(column, center, center);
       padding: 0;
 
       .textAll{
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        @include flexBox(column, center, center);
         margin-top: 1rem;
         .text{
           width: 100%;
@@ -574,10 +540,8 @@ img{
       }
 
       .imgAll{
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-between;
-        align-items: center;
+        @include flexBox(column, space-between, center);
+
         .webLink{
           margin-bottom: 1rem;
         }
@@ -594,9 +558,7 @@ img{
     
     form{
       width: 100%;
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: center;
+      @include flexBox(column, none, center);
     
       input{
         width: 90%;
