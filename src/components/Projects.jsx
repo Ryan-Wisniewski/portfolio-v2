@@ -23,12 +23,16 @@ const Projects = () => {
                         <p className='text2'>Utilized: React, useContext</p>
                         <a className='link' href='https://bead-itv2.netlify.app/' target="_blank" rel="noopener noreferrer">Check out the website</a>
                     </div>
-                    <a className='imgAll' href='https://bead-itv2.netlify.app/' target="_blank" rel="noopener noreferrer">
-                        <div className='cursorDefault'>
+                    <div className='imgAll'>
+                        <div className='marginDiv'>
+                        <a className='cursorDefault' href='https://bead-itv2.netlify.app/' target="_blank" rel="noopener noreferrer">
                             <p className='webLink' style={{visibility: 'hidden'}}>Sorry, Repo is Private</p>
+                        </a>
                         </div>
-                        <img src={biImg} alt='project 4 img here' className='imgAnime' />
-                    </a>
+                        <a href='https://bead-itv2.netlify.app/' target="_blank" rel="noopener noreferrer">
+                            <img src={biImg} alt='project 4 img here' className='projImg imgAnime' />
+                        </a>
+                    </div>
                 </div>
                 <div className='project1'>
                     <div className='textAll'>
@@ -42,12 +46,16 @@ const Projects = () => {
                         <p className='text2'>Utilized: React, Node.js, sockets</p>
                         <a className='link' href='https://snake-online.netlify.app' target="_blank" rel="noopener noreferrer">Check out the website</a>
                     </div>
-                    <a className='imgAll' href='https://github.com/Ryan-Wisniewski/tronOnline' target="_blank" rel="noopener noreferrer">
-                        <div className='cursorDefault'>
-                            <p className='webLink'>GitHub repository here</p>
+                    <div className='imgAll'>
+                        <div className='marginDiv'>
+                            <a className='' href='https://github.com/Ryan-Wisniewski/tronOnline' target="_blank" rel="noopener noreferrer">
+                                <p className='webLink'>GitHub repository here</p>
+                            </a>
                         </div>
-                        <img src={sosImg} alt='project 4 img here' className='imgAnime' />
-                    </a>
+                        <a className='' href='https://github.com/Ryan-Wisniewski/tronOnline' target="_blank" rel="noopener noreferrer">
+                            <img src={sosImg} alt='project 4 img here' className='projImg imgAnime' />
+                        </a>
+                        </div>
                 </div>
                 <div className='project2'>
                     <div className='textAll'>
@@ -60,12 +68,16 @@ const Projects = () => {
                         <p className='text2'>Utilized: React, Node.js, sockets</p>
                         <a className='link' href='https://github.com/Ryan-Wisniewski/PokedexUI' target="_blank" rel="noopener noreferrer">GitHub repository here</a>
                     </div>
-                    <a className='imgAll' href='https://kanto-region-pokedex.netlify.app' target="_blank" rel="noopener noreferrer">
-                        <div className='cursorDefault'>
-                            <p className='webLink'>Check out the website</p>
+                    <div className='imgAll'>
+                        <div className='marginDiv'>
+                            <a className='' href='https://github.com/Ryan-Wisniewski/tronOnline' target="_blank" rel="noopener noreferrer">
+                                <p className='webLink'>Check out the website</p>
+                            </a>
                         </div>
-                        <img src={pokImg} alt='project 4 img here' className='imgAnime' />
-                    </a>
+                        <a href='https://kanto-region-pokedex.netlify.app' target="_blank" rel="noopener noreferrer">
+                            <img src={pokImg} alt='project 4 img here' className='projImg imgAnime' />
+                        </a>
+                    </div>
                 </div>
                 <div className='project1'>  
                     <div className='textAll'>
@@ -78,10 +90,16 @@ const Projects = () => {
                         <p className='text2'>Utilized: Python3</p>
                         <a className='link' href='https://github.com/Team-Nowhere/CS-Build-Week-2' target="_blank" rel="noopener noreferrer">GitHub repository here</a>
                     </div>
-                    <a className='imgAll' href='https://github.com/Team-Nowhere/CS-Build-Week-2' target="_blank" rel="noopener noreferrer">
-                        <p className='webLink'>Check out the Github</p>
-                        <img src={bcmImg} alt='project 4 img here' className='imgAnime' />
-                    </a>
+                    <div className='imgAll'>
+                        <div className='marginDiv'>
+                            <a className='' href='https://github.com/Team-Nowhere/CS-Build-Week-2' target="_blank" rel="noopener noreferrer">
+                                <p className='webLink'>Check out the Github</p>
+                            </a>
+                        </div>
+                        <a href='https://github.com/Team-Nowhere/CS-Build-Week-2' target="_blank" rel="noopener noreferrer">
+                            <img src={bcmImg} alt='project 4 img here' className='projImg imgAnime' />
+                        </a>
+                    </div>
                 </div>
                 <div className='project2'>
                     <div className='textAll'>
@@ -95,10 +113,16 @@ const Projects = () => {
                         <p className='text2'>Utilized: Mongo, Firebase, React, Node, Express</p>
                         <a className='link' href='https://github.com/Lambda-School-Labs/project-firefly-site' target="_blank" rel="noopener noreferrer">GitHub repository here</a>
                     </div>
-                    <a className='imgAll' href='https://projectfirefly.netlify.com/' target="_blank" rel="noopener noreferrer">
-                        <p className='webLink'>Check out the website</p>
-                        <img src={ffsImg} alt='project 2 img here' className='imgAnime' />
-                    </a>
+                    <div className='imgAll'>
+                        <div className='marginDiv'>
+                            <a href='https://projectfirefly.netlify.com/' target="_blank" rel="noopener noreferrer">
+                                <p className='webLink'>Check out the website</p>
+                            </a>
+                        </div>
+                        <a href='https://projectfirefly.netlify.com/' target="_blank" rel="noopener noreferrer">
+                            <img src={ffsImg} alt='project 2 img here' className='projImg imgAnime' />
+                        </a>
+                    </div>
                 </div>                
                 <div className='project1'>
                     <div className='textAll'>
@@ -116,10 +140,16 @@ const Projects = () => {
                         <p className='text2'>Utilized: HTML/CSS, JS, React</p>
                         <a  className='link' href='https://github.com/lambda-split-the-bill' target="_blank" rel="noopener noreferrer">GitHub repository here</a>
                     </div>
-                    <a className='imgAll' href='https://split-the-bill.netlify.com/' target="_blank" rel="noopener noreferrer">
-                        <p className='webLink'>Check out the website</p>
-                        <img src={stbImg} alt='project 1 img here' className='imgAnime' />
-                    </a>
+                    <div className='imgAll'>
+                        <div className='marginDiv'>
+                            <a href='https://split-the-bill.netlify.com/' target="_blank" rel="noopener noreferrer">
+                                <p className='webLink'>Check out the website</p>
+                            </a>
+                        </div>
+                        <a href='https://projectfirefly.netlify.com/' target="_blank" rel="noopener noreferrer">
+                            <img src={stbImg} alt='project 1 img here' className='projImg imgAnime' />
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>

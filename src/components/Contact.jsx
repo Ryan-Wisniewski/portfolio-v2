@@ -79,15 +79,12 @@ const Contact = (props) => {
                     <button type='submit' value="Send">Submit</button>
                 </form>
                 <footer className='footer'>
-
-                    <div>
                         <span id='footer' name='footer'> &nbsp; </span>
                         <h2>Or Contact Directly:</h2>
                         <ul>
                             <li>RyanWisniewski39@gmail.com</li>
                             <li>Woodstock, GA</li>
                         </ul>
-                    </div>           
                 </footer>
             </div>
             }
