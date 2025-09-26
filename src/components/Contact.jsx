@@ -35,13 +35,11 @@ const Contact = (props) => {
         let template_id = "contact";
         emailjs.send(service_id, template_id, template_params, 'user_ODTJPw3P4BqTgPwrOMWZj')
             .then((res) => {
-                console.log('re',res)
                 sleep(1000).then(() => {
                     setIsLoading(false)
                     window.location.reload(true);
                 })
             }, (error) => {
-                console.log(error)
                 setIsLoading(false)
             });
     }
