@@ -1,14 +1,22 @@
-import React from 'react'
+import React, {useState} from 'react'
 import stbImg from '../assets/split-the-bill.PNG'
 import ffsImg from '../assets/firefly.PNG'
 import bcmImg from '../assets/CSBW2.PNG'
 import pokImg from '../assets/Pokedex.PNG'
 import sosImg from '../assets/bmtron.PNG'
 import biImg from '../assets/Beaditv2.PNG'
+import FullScreenImg from './FullScreenImg'
 
 const Projects = () => {
+    const [currentImage, setCurrentImage] = useState(undefined)
+
+    const handleImg = (img) => {
+        setCurrentImage(img)
+    }
+
     return (
         <section>
+            {currentImage && <FullScreenImg img={currentImage} setCurrentImage={setCurrentImage} />}
             <span id='projects' name='projects'> &nbsp; </span>
             <div className='projects'>
                 <div className='project2'>
@@ -21,17 +29,14 @@ const Projects = () => {
                             With the power of imagination this app fits your beading needs. 
                         </p>
                         <p className='text2'>Utilized: React, useContext</p>
-                        <a className='link' href='https://bead-itv2.netlify.app/' target="_blank" rel="noopener noreferrer">Check out the website</a>
                     </div>
                     <div className='imgAll'>
                         <div className='marginDiv'>
-                        <a className='cursorDefault' href='https://bead-itv2.netlify.app/' target="_blank" rel="noopener noreferrer">
-                            <p className='webLink' style={{visibility: 'hidden'}}>Sorry, Repo is Private</p>
+                        <a className='link' href='https://bead-itv2.netlify.app/' target="_blank" rel="noopener noreferrer">
+                            <p className='webLink'>Check out the website</p>
                         </a>
                         </div>
-                        <a href='https://bead-itv2.netlify.app/' target="_blank" rel="noopener noreferrer">
-                            <img src={biImg} alt='project 4 img here' className='projImg imgAnime' />
-                        </a>
+                        <img src={biImg} alt='project 4 img here' className='projImg imgAnime' onClick={() => handleImg(biImg)}/>
                     </div>
                 </div>
                 <div className='project1'>
@@ -44,7 +49,6 @@ const Projects = () => {
                             The objective is to avoid other snakes path and the wall or you loose. Can you survive long enough to win?
                         </p>
                         <p className='text2'>Utilized: React, Node.js, sockets</p>
-                        <a className='link' href='https://snake-online.netlify.app' target="_blank" rel="noopener noreferrer">Check out the website</a>
                     </div>
                     <div className='imgAll'>
                         <div className='marginDiv'>
@@ -52,10 +56,8 @@ const Projects = () => {
                                 <p className='webLink'>GitHub repository here</p>
                             </a>
                         </div>
-                        <a className='' href='https://github.com/Ryan-Wisniewski/tronOnline' target="_blank" rel="noopener noreferrer">
-                            <img src={sosImg} alt='project 4 img here' className='projImg imgAnime' />
-                        </a>
-                        </div>
+                        <img src={sosImg} alt='project 4 img here' className='projImg imgAnime' onClick={() => handleImg(sosImg)}/>
+                    </div>
                 </div>
                 <div className='project2'>
                     <div className='textAll'>
@@ -66,17 +68,14 @@ const Projects = () => {
                             The Pokédex also comes with a search functionality to easily find a Pokémon by name or number.
                         </p>
                         <p className='text2'>Utilized: React, Node.js, sockets</p>
-                        <a className='link' href='https://github.com/Ryan-Wisniewski/PokedexUI' target="_blank" rel="noopener noreferrer">GitHub repository here</a>
                     </div>
                     <div className='imgAll'>
                         <div className='marginDiv'>
-                            <a className='' href='https://github.com/Ryan-Wisniewski/tronOnline' target="_blank" rel="noopener noreferrer">
-                                <p className='webLink'>Check out the website</p>
+                            <a className='link' href='https://github.com/Ryan-Wisniewski/PokedexUI' target="_blank" rel="noopener noreferrer">
+                                <p className='webLink'>GitHub repository here</p>
                             </a>
                         </div>
-                        <a href='https://kanto-region-pokedex.netlify.app' target="_blank" rel="noopener noreferrer">
-                            <img src={pokImg} alt='project 4 img here' className='projImg imgAnime' />
-                        </a>
+                        <img src={pokImg} alt='project 4 img here' className='projImg imgAnime' onClick={() => handleImg(pokImg)}/>
                     </div>
                 </div>
                 <div className='project1'>  
@@ -88,17 +87,14 @@ const Projects = () => {
                             Mined 623 of the 1220 total coins out of 10 teams competing. 
                         </p>
                         <p className='text2'>Utilized: Python3</p>
-                        <a className='link' href='https://github.com/Team-Nowhere/CS-Build-Week-2' target="_blank" rel="noopener noreferrer">GitHub repository here</a>
                     </div>
                     <div className='imgAll'>
                         <div className='marginDiv'>
-                            <a className='' href='https://github.com/Team-Nowhere/CS-Build-Week-2' target="_blank" rel="noopener noreferrer">
-                                <p className='webLink'>Check out the Github</p>
+                            <a className='link' href='https://github.com/Team-Nowhere/CS-Build-Week-2' target="_blank" rel="noopener noreferrer">
+                                <p className='webLink'>GitHub repository here</p>
                             </a>
                         </div>
-                        <a href='https://github.com/Team-Nowhere/CS-Build-Week-2' target="_blank" rel="noopener noreferrer">
-                            <img src={bcmImg} alt='project 4 img here' className='projImg imgAnime' />
-                        </a>
+                        <img src={bcmImg} alt='project 4 img here' className='projImg imgAnime' onClick={() => handleImg(bcmImg)}/>
                     </div>
                 </div>
                 <div className='project2'>
@@ -111,17 +107,14 @@ const Projects = () => {
                             The team and I matched the product to the vision of the stakeholder by implementing the design canvases provided.
                         </p>
                         <p className='text2'>Utilized: Mongo, Firebase, React, Node, Express</p>
-                        <a className='link' href='https://github.com/Lambda-School-Labs/project-firefly-site' target="_blank" rel="noopener noreferrer">GitHub repository here</a>
                     </div>
                     <div className='imgAll'>
                         <div className='marginDiv'>
-                            <a href='https://projectfirefly.netlify.com/' target="_blank" rel="noopener noreferrer">
-                                <p className='webLink'>Check out the website</p>
+                            <a className='link' href='https://github.com/Lambda-School-Labs/project-firefly-site' target="_blank" rel="noopener noreferrer">
+                                <p className='webLink'>GitHub repository here</p>
                             </a>
                         </div>
-                        <a href='https://projectfirefly.netlify.com/' target="_blank" rel="noopener noreferrer">
-                            <img src={ffsImg} alt='project 2 img here' className='projImg imgAnime' />
-                        </a>
+                        <img src={ffsImg} alt='project 2 img here' className='projImg imgAnime' onClick={() => handleImg(ffsImg)}/>
                     </div>
                 </div>                
                 <div className='project1'>
@@ -138,17 +131,14 @@ const Projects = () => {
                             of an upcoming unit by receiving a crash course of React.
                         </p>
                         <p className='text2'>Utilized: HTML/CSS, JS, React</p>
-                        <a  className='link' href='https://github.com/lambda-split-the-bill' target="_blank" rel="noopener noreferrer">GitHub repository here</a>
                     </div>
                     <div className='imgAll'>
                         <div className='marginDiv'>
-                            <a href='https://split-the-bill.netlify.com/' target="_blank" rel="noopener noreferrer">
-                                <p className='webLink'>Check out the website</p>
+                            <a className='link' href='https://github.com/lambda-split-the-bill' target="_blank" rel="noopener noreferrer">
+                                <p className='webLink'>GitHub repository here</p>
                             </a>
                         </div>
-                        <a href='https://projectfirefly.netlify.com/' target="_blank" rel="noopener noreferrer">
-                            <img src={stbImg} alt='project 1 img here' className='projImg imgAnime' />
-                        </a>
+                        <img src={stbImg} alt='project 1 img here' className='projImg imgAnime' onClick={() => handleImg(stbImg)}/>
                     </div>
                 </div>
             </div>

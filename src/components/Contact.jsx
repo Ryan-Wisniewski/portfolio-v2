@@ -35,13 +35,11 @@ const Contact = (props) => {
         let template_id = "contact";
         emailjs.send(service_id, template_id, template_params, 'user_ODTJPw3P4BqTgPwrOMWZj')
             .then((res) => {
-                console.log('re',res)
                 sleep(1000).then(() => {
                     setIsLoading(false)
                     window.location.reload(true);
                 })
             }, (error) => {
-                console.log(error)
                 setIsLoading(false)
             });
     }
@@ -53,6 +51,7 @@ const Contact = (props) => {
                 <span id='contact' name='contact'> &nbsp; </span>
                     <legend>Ask me anything!</legend>
                     <input
+                        className='input'
                         type='email'
                         name='email'
                         placeholder='Your email here'
@@ -60,6 +59,7 @@ const Contact = (props) => {
                         onChange={onChange}
                         />
                     <input
+                        className='input'
                         type='text'
                         name='name'
                         placeholder='Your name here'
@@ -68,7 +68,7 @@ const Contact = (props) => {
                         required
                         />
                     <textarea
-                        className='description'
+                        className='input description'
                         type='text'
                         name='description'
                         placeholder='Your question or suggestion here'
@@ -78,14 +78,6 @@ const Contact = (props) => {
                         />
                     <button type='submit' value="Send">Submit</button>
                 </form>
-                <footer className='footer'>
-                        <span id='footer' name='footer'> &nbsp; </span>
-                        <h2>Or Contact Directly:</h2>
-                        <ul>
-                            <li>RyanWisniewski39@gmail.com</li>
-                            <li>Woodstock, GA</li>
-                        </ul>
-                </footer>
             </div>
             }
         </>
